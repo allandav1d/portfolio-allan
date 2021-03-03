@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color-light);
+    text-align: center;
+    font-weight: 400;
+}
+.bgDarkBlue{
+    background: var(--secondary-color);
+}
+.socialList{
+    list-style-type: none;
+    display: inline-flex;
+}
+.socialList li{
+    padding: 0 .5rem;
+}
+  

@@ -1,0 +1,24 @@
+.list{
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.listItem{
+    padding: 0 .5rem;
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+}
+
+.listItem a:hover{
+    font-weight: var(--font-bold);
+}
+
+.listItem:last-child{
+    padding: .5rem;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    border-radius: 6px;
+}
+
+  
