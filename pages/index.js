@@ -11,8 +11,8 @@ export default function Home() {
     <>
     <Main/>
      <section id="eu" className="container">
-        <div className={styles.col}>Photo</div>
-        <div className={styles.col}>
+        <div className={styles.col4}>Photo</div>
+        <div className={styles.col6}>
           <h3 className={styles.subTitle}>Eu</h3>
           <h2 className={styles.Title}>Sobre Mim</h2>
           <p>
