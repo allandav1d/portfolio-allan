@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
   --primary-color: #F27405;
+  --primary-color-light: #FFB01E;
+
+
   --secondary-color: #1D3557;
   --background-gray: #EBEAEA;
-
   --text-color: #01263D;
   --text-color-blue-Light: rgba(29, 53, 87, 0.8);
   --text-color-orange: #F27405;
@@ -27,23 +30,20 @@ body {
   font-family: 'Source Code Pro', monospace;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .container {
-  width: min(100vw,710px);
-  margin: 0 auto;
-  padding: 1rem 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0;
+  margin: 0 auto;
 }
 
 .fullWidth {
@@ -55,4 +55,19 @@ a {
 *::selection{
   background: var(--primary-color);
   color: var(--text-color-light);
+}
+
+/*Desktop CSS*/
+@media (min-width: 426px) {
+  
+.container {
+  width: min(100vw,710px);
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 }

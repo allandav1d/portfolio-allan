@@ -1,16 +1,25 @@
-import Head from "next/head";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from 'next/image';
 import styles from '../styles/Nav.module.css';
 
 export default function Nav() {
+  const [isActive, setActive] = useState(false);
+
+const toggleClass = () => {
+    setActive(!isActive);
+  };
+
   return (
-    <header className="container">
-      <Head>
-        <title>AllanDav1d - Portfólio</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <header className={[styles.navDesktop,"container"].join(" ")}>
+      
       <Image src="/Logo.svg" alt="Logo" width={60} height={60}/>
+
+      <div className={[styles.menuIcon, isActive ? styles.change: null].join(" ")} onClick={toggleClass} > 
+        <div className={styles.bar1}></div>
+        <div className={styles.bar2}></div>
+        <div className={styles.bar3}></div>
+      </div>
 
       <ul className={styles.list}>
         <li className={styles.listItem}>

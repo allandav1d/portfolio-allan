@@ -1,0 +1,13 @@
+.my3D{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.my3D model-viewer {
+    width: 100%;
+    height: 100%;
+    background-color: #70bcd100;
+    --poster-color: #c2373700;
+  }

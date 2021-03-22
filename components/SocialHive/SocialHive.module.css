@@ -1,0 +1,62 @@
+/*Desktop CSS*/
+@media (min-width: 426px) {
+    .socialContainer{
+        position: absolute;
+        bottom: 0;
+        height: fit-content;
+        margin-bottom: -15px;
+    }
+    .polygonLine{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: -12px;
+    }
+    .polygonLine:nth-child(even)   { margin-left: 0%; }
+    .polygonLine:nth-child(odd)  { margin-left: -17%; }
+    
+    .polygon{
+        margin-left: .1rem;
+        display: inline-block;
+        position: relative;
+        width: 55px;
+        height: 55px;
+        background-color: var(--primary-color);
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+    .polygon:before {
+        display: block;
+        content: '';
+        width: 52px;
+        height: 52px;
+        -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        background-color: var(--primary-color-light);
+        position: absolute;
+        top: 50%; right: 50%;
+        transform: translate(50%,-50%);
+        z-index: -1;
+    }
+    .polygon svg{
+        position: absolute;
+        font-size: 1.6rem;
+        top: 50%; right: 50%;
+        transform: translate(50%,-50%);
+        color: var(--primary-color);
+    }
+    .polygon:not(:empty):hover:before {
+        background-color: var(--primary-color);
+    }
+    .polygon:is(:not(:empty):hover) svg{
+        color: var(--primary-color-light);
+    }
+}
+
+/*Mobile CSS*/
+@media (max-width: 425px) {
+    .socialContainer{
+        display: none;
+    }
+}
