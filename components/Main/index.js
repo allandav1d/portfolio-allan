@@ -18,17 +18,16 @@ export default function main() {
           <div className={styles.column}>
             <h4 className={styles.salut}>Olá, eu sou</h4>
             <h2 className={styles.name}>ALLANDAV1D</h2>
-            <h3 className={styles.job}>Desenvolvedor WEB</h3>
-            <p className={styles.description}>Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum.</p>
+            <h3 className={styles.job}>DESENVOLVEDOR WEB E GAME DESIGNER</h3>
             <div className={styles.row}>
-              <a className={[styles.btn , styles.btnCV].join(' ')} >Download CV</a>
-              <a className={[styles.btn , styles.btnContact].join(' ')} >Contato</a>
+              <a className={[styles.btn, styles.btnCV].join(' ')} >Download CV</a>
+              <a className={[styles.btn, styles.btnContact].join(' ')} >Contato</a>
             </div>
-            {/** <SocialHiveMobile /> */} 
+            {/** <SocialHiveMobile /> */}
           </div>
-          
-          <div className={styles.my3dContainer}>  
-            <Model/>
+
+          <div className={styles.my3dContainer}>
+            <Model />
           </div>
 
         </div>

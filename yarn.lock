@@ -39,6 +39,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@google/model-viewer@^1.5.0":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@google/model-viewer/-/model-viewer-1.7.1.tgz#c89552a499a9b9c01ff4fa2b5b6b0454d9d50cb1"
+  integrity sha512-4G/Y2Ue26lteCS9if6C6jVwXcKX8UDP3DKAWbHAd2Ig3TQgmWVd7SiV0QnFwuWa1GivC4CCRoHPnSfBb/VehkA==
+
 "@hapi/accept@5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@hapi/accept/-/accept-5.0.1.tgz#068553e867f0f63225a506ed74e899441af53e10"
@@ -1433,6 +1438,11 @@ react-dom@17.0.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     scheduler "^0.20.1"
+
+react-icons@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.2.0.tgz#6dda80c8a8f338ff96a1851424d63083282630d0"
+  integrity sha512-rmzEDFt+AVXRzD7zDE21gcxyBizD/3NqjbX6cmViAgdqfJ2UiLer8927/QhhrXQV7dEj/1EGuOTPp7JnLYVJKQ==
 
 react-is@16.13.1, react-is@^16.8.1:
   version "16.13.1"
