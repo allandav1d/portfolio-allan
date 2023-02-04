@@ -20,8 +20,8 @@ export default function main() {
             <h2 className={styles.name}>ALLANDAV1D</h2>
             <h3 className={styles.job}>DESENVOLVEDOR WEB E GAME DESIGNER</h3>
             <div className={styles.row}>
-              <a className={[styles.btn, styles.btnCV].join(' ')} >Download CV</a>
-              <a className={[styles.btn, styles.btnContact].join(' ')} >Contato</a>
+              {/*<a className={[styles.btn, styles.btnCV].join(' ')} >Download CV</a>*/}
+              {/*<a className={[styles.btn, styles.btnContact].join(' ')} >Contato</a>*/}
             </div>
             {/** <SocialHiveMobile /> */}
           </div>
